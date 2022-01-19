@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.section {
+	max-width: 980px;
+}
+
+.container {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.hero {
+	position: relative;
+}
+
+.hero img {
+	object-fit: cover;
+	height: 400px;
+}
+
+.hero-absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 1.7rem;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 2.1rem;
+}
+
+.hero-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.author,
+.date {
+	color: #dfdfdf;
+	font-size: 0.7rem;
+	font-weight: 500;
+}
+
+.author {
+	position: relative;
+	padding-right: 10px;
+}
+
+.date {
+	padding-left: 10px;
+}
+
+.author::before {
+	position: absolute;
+	content: "";
+	width: 1.5px;
+	height: 100%;
+	background: #fff;
+	right: 0;
+	top: 0;
+}
+
+h2 {
+	font-size: 1.7rem;
+	margin: 3rem 0 1rem 0;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 3rem 0 1rem 0;
+	font-weight: 600;
+}
+
+p {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #2f2f2f;
+	line-height: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+	.section {
+		margin: 0 8%;
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.author,
+	.date {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.section {
+		margin: 0 15%;
+	}
+
+	.title {
+		font-size: 2.6rem;
+		line-height: 3.5rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.section {
+		margin: 0 auto;
+	}
+
+	.title {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+}
+
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 0%;
+	background: linear-gradient(to right, #fc4a1a, #f7b733);
+	z-index: 999;
+	transition: width 0.2s ease-in-out;
+}
